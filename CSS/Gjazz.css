@@ -1,0 +1,215 @@
+/* -----------------------------------
+CONTENTS
+
+Elements
+Layout
+Header
+Carousel
+Main Content
+Form
+Footer
+----------------------------------- */
+
+
+
+/*------------------------------------
+Elements
+------------------------------------ */
+body{
+    color:#000;
+    background: #F8F8F8;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+}
+
+/*-----------------------------------
+Layout
+------------------------------------*/
+#container{                       /* container wraps around whole page, 800px too tight - 980px centred in viewport  margin 0 top bottom, auto on the lr*/
+    width:980px;
+    margin:0px auto;
+    background:#ffffff;
+    padding: 0px;
+}
+
+/*-----------------------------------
+Header
+------------------------------------*/
+#header{                                                                 /*expands the green header*/
+	width:920px;
+    height:100px;
+    padding: 20px 30px 0; 
+	background-color: #00B0B9;
+}
+    
+/*-----------------------------------
+Navigation
+------------------------------------*/
+nav{
+    position:relative;
+    top:0px;
+    text-align:right;
+}
+
+
+nav{
+	list-style:none;
+	margin-left:0;
+    font-size: 15px;
+}
+
+nav li{
+	display:inline;
+}
+
+nav li a{                                     
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav a{
+	display:inline-block;
+	margin-left:5%;
+}
+
+
+
+nav a:hover{
+    color:black;
+}
+ nav a:visted{
+    color:#ffffff;
+ }
+    
+/* -----------------------------------
+Carousel
+----------------------------------- */
+/*--from Harry from CSS Wizadry for carousel "Build Along" --*/
+.carousel{
+    overflow:hidden;
+    width:100%;
+}
+.panes{
+	margin-left:0;
+    list-style:none;
+    position:relative;
+    width:500%; 
+    overflow:hidden;
+     
+    -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+	animation:carousel 30s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; 
+}
+.panes > li > a{
+    display:block;
+}
+.carousel img{
+    display:block;
+	padding:1%;
+    width:98%;
+    max-width:98%;
+}
+.carousel h2{
+	font-size:1em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:right;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+
+@-moz-keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+@-webkit-keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+/* -----------------------------------
+Main Content
+----------------------------------- */
+h2{
+    font-size: 20px;
+    color:#00B0B9;
+    
+}
+
+p{
+font: 120%/2 arial, helvetica, sans-serif;
+}
+/* -----------------------------------
+Forms
+----------------------------------- */
+
+/* -----------------------------------
+Footer
+----------------------------------- */
+#footer { 
+	position: relative;
+	clear: both;
+	padding: 20px 30px;	        /* we will match the footer padding to the header one 20px top 30px left/right*/
+	color:silver;
+	background:#fff;
+	text-align:right;
+ }
