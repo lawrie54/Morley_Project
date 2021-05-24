@@ -1,3 +1,3 @@
 # Morley_Project
 
-website for jazz (front-end coding)
+website for jazz landing page (front-end coding)
